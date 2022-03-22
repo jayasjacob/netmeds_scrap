@@ -31,11 +31,6 @@ class NetmedsSpider(scrapy.Spider):
         for title_out, price_out in zip(title_list, price):
             result_list.append({"title": title_out, "price": price_out})
 
-        items['title'] = result_list
+        items['fin_result'] = result_list
         yield items
-
-        # dumping into json file
-
-        # with open('info.json', 'w') as out_file:
-        #     json.dump(result_list, out_file)
 

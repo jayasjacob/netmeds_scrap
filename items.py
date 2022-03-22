@@ -7,6 +7,5 @@ import scrapy
 
 
 class NetmedsScrapeDataItem(scrapy.Item):
-    title =  scrapy.Field()
-    price =  scrapy.Field()
-    pass
+   
+    fin_result = scrapy.Field()
